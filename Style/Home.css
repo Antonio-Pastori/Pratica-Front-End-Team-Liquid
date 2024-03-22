@@ -3,6 +3,10 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
@@ -20,16 +24,193 @@ header{
 }
 
 #menu_lateral_icon{
+    background-color: white;
     color: #021523;
     padding: 5px;
     border-radius: 2px;
     border: 0;
+}
+
+#voltaside{
     background-color: white;
+    color: #021523;
+    padding: 5px;
+    border-radius: 2px;
+    border: 0;
 }
 
 #menu_lateral_icon:hover{
     background-color: rgb(200, 198, 198);
+}
 
+#voltaside:hover{
+    background-color: rgb(200, 198, 198);
+}
+
+#sidebar{
+    z-index: 1000;
+    background-color: white;
+    position: fixed;
+    right: -40vw;
+    height: 100%;
+    width: 40vw;
+    transition: right 0.5s ease-in-out;
+}
+
+#sidebar #voltaside{
+    margin: 2%;
+}
+
+#sidebar #mainlist{
+    width: 100%;
+    height: 90%;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+
+#sidebar #mainlist li{
+    width: 80%;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+#sidebar #mainlist li:hover{
+    background-color: rgb(200, 198, 198);
+}
+
+#sublist{
+    list-style: none;
+    width: 80%;
+   
+    gap: 5%;
+    display: none;
+    text-align: left;
+    
+}
+
+#sublistmaker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#sublistmaker #chevri{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #021523;
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#content h1{
+    color: #021523;
+}
+
+#imageminicio{
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    background: url("../Image/Torcida_Team_Liquid.jpg");
+    background-size: cover;
+    color: white;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#imageminicio #sombreado{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%;
+    visibility: hidden;
+}
+
+#imageminicio #sombreado #message{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+    visibility: hidden;
+}
+
+#imageminicio #sombreado #message:hover{
+    visibility: visible;
+}
+
+
+#whatis{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#whatis p{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+footer{
+    background-color: #021523;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer #redes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .rede{
+    width: 14.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#youtube{
+    width: 13vw;
+}
+
+#git{
+    width: 16vw;
+}
+
+.iconeRedes{
+    width: 2.5vw;
+    height: auto;
 }
 
 
